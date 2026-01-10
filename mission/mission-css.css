@@ -1,0 +1,41 @@
+body {
+    font-size: 1.3em;
+    padding: 40px;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 55%;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+header p {
+    color: #006eb7;
+}
+
+main {
+    padding-top: 20px;
+}
+
+#list-header {
+    padding: 10px;
+    font-style: italic;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+img {
+    padding-top: 35px;
+    max-width: 20%;
+    display: block;
+    margin: 0 auto;
+}
