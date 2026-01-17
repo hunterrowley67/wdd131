@@ -2,10 +2,16 @@ body {
     font-size: 1.3em;
     padding: 40px;
 }
-
+#light-selector {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 #content {
     margin: 0 auto;
     max-width: 55%;
+    border: solid 2px;
+    padding: 50px;
 }
 
 header {
@@ -38,4 +44,14 @@ img {
     max-width: 20%;
     display: block;
     margin: 0 auto;
+}
+
+.dark-mode {
+    background-color: #404040;
+    color: white;
+    border-color: white;
+}
+
+.dark-mode-body {
+    background-color: #404040;
 }
