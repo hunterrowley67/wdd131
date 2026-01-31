@@ -17,16 +17,17 @@ header {
     padding: 10px;
 }
 
-button {
+.menu-button {
     background-color: #2a81e2;
     border-style: none;
     color: white;    
     font-size: 1.5em;
+    margin-bottom: 5px;
 }
 
 nav a {
     color: white;
-    display: none;
+    display: block;
     padding: 10px;
 
 }
@@ -48,7 +49,7 @@ h2 {
     place-items: center;
 }
 
-img {
+#image-table img {
     border: 5px solid white;
     box-sizing: border-box;
     max-width: 40%;
@@ -56,18 +57,43 @@ img {
     margin: 10px;
 }
 
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+
+.close-button {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+
+.hide {
+    display: none;
+}
 @media screen and (min-width: 700px) {
     #image-table {
         grid-template-columns: 1fr 1fr;
     }
-    img {
+    #image-table img {
         max-width: 70%;
     }
 }
 
 @media screen and (min-width: 1000px) {
-   button {
+   .menu-button {
         display: none;
+    }
+    .hide {
+        display: block;
     }
     nav a {
         display: inline;
