@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:description" content="An online recipe book to share the best recipes.">
+    <meta property="og:url" content="hunterrowley67.github.io/wdd131/recipes/index.html">
+    <meta property="og:image" content="hunterrowley67.github.io/wdd131/recipes/images/recipe-book.png">
+
+    <!-- X Card -->
+    <meta name="twitter:card" content="hunterrowley67.github.io/wdd131/recipes/images/recipe-book.png">
+    <meta name="twitter:title" content="Recipe Book">
+    <meta name="twitter:description" content="An online recipe book to share the best recipes.">
+    <meta name="twitter:image" content="hunterrowley67.github.io/wdd131/recipes/images/recipe-book.png">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+                
+    <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.js" defer></script>
+    <title>Recipe Book</title>
+
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="images/recipe-book.png" alt="A book with a chefs hat on the cover with the text Recipe Book to the right of it.">
+            <h1>RecipeBook</h1>
+        </div>
+        <div id="search-bar">
+            <form action="/search-page" method="get" id="search-bar-form">
+                <input type="search" id="search-input" name="search-input" placeholder="Find a recipe">
+                <button id="search-bar-button">
+                    <img src="images/search.svg" alt="A maginfying glass button used to search for recipes.">
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="recipe-card">
+            <div class="recipe-details">
+                <h2 class="recipe-name">Apple Crisp</h2>
+                <p class="recipe-tag">dessert</p>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="recipe-description">This apple crisp recipe is a simple yet delicous fall dessert that's great served warm with vanilla ice cream.</p>
+            </div>
+            <div class="recipe-image">
+                <img src="images/apple-crisp.jpg" alt="A golden brown apple crisp in a bowl with a scoop of white vanilla ice cream on top">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+         <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>      
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>                                         
+    </footer>
+</body>
+</html>
