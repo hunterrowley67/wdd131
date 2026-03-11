@@ -25,17 +25,12 @@ h1 {
     border: 1px solid black;
     border-radius: 7px;
     box-sizing: border-box;
-}
-
-#search-bar-form {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    border-radius: 7px;
-    
 }
 
-#search-bar-form input {
+#search-bar input {
     width: 100%;
     font-size: 1.2em;
 }
@@ -59,6 +54,7 @@ h1 {
     width: 90%;
     margin: 0 auto;
     font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .recipe-details {
@@ -70,11 +66,16 @@ h1 {
     margin: 0;
 }
 
-.recipe-tag {
+.tags {
+    display: flex;
     order: -1;
+}
+
+.recipe-tag {
     background-color: #f0f0f0;
     font-size: 1.3em;
-    width: 90px;
+    width: min-content;
+    padding: 5px;
     text-align: center;
     border: lightgray solid 2px;
     box-shadow: 0 0 1px 1px lightgray;
