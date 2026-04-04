@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | Johnson Junk Removal</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+    <script src="./javascript/schedule.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="./images/logo.png" alt="Golden letters spelling JJR over a black background.">
+        </a>
+        <button class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule Now</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Schedule Now!</h1>
+        <hr>
+       <section id="intro">
+            <div id="intro-text">
+                <h2>What we need to know!</h2>
+                <p>We need to know your email, phone number, address, prefered form of contact and the general size of the junk you need removed.</p>
+                <p>For scheduling purposes we need to know 1 to 3 days that you are available and the days need to be at least 24 hours ahead.</p>
+            </div>
+            <div id="banner-image">
+               <img src="./images/schedule-banner.png" alt="Company log above two cartoon trucks full of junk on a tan background.">
+            </div>
+       </section>
+       <section id="schedule-form">
+            <h2>Schedule Here!</h2>
+            <form id="scheduleForm">
+                <div id="email-selection">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div id="phone-selection">    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                
+                <div id="address-selection">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" required>
+                </div>
+                
+                <div id="form-of-contact">
+                    <label for="preferedContact">Prefered Form of Contact:</label>
+                    <select id="preferedContact" name="preferedContact" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="phone">Phone Number</option>
+                        <option value="email">Email</option>
+                    </select>
+                </div>
+                
+                <div id="junk-selection">
+                    <label for="generalJunkSize">General Size of the Junk you need Removed:</label>
+                    <select name="generalJunkSize" id="generalJunkSize">
+                        <option value="">-- Select a size --</option>
+                        <option value="less than a truckload">Less than 1 truckload -- $10 to $145</option>
+                        <option value="1 truckload">One Truckload -- $150</option>
+                        <option value="2 truckloads">Two Truckloads -- $300</option>
+                        <option value="3 truckloads">3 Truckloads -- $400 ($50 dollars off)</option>
+                        <option value="more than 3 truckloads">More than 3 truckloads -- $100/Truckload ($50 dollars off per truckload)</option>
+                    </select>
+                </div>
+                
+                <div id="date-select">
+                    <label>Select up to 3 prefered pickup dates:</label>
+                    <div id="month-select">
+                        <button type="button" id="prevMonth">&lt;</button>
+                        <div id="monthLabel"></div>
+                        <button type="button" id="nextMonth">&gt;</button>
+                    </div>
+                    <div class="calendar" id="calendar"></div>
+                    <input type="hidden" id="selectedDays" name="selectedDays">
+                </div>
+
+                
+                <p
+                    id="formStatus"
+                    role="status"
+                    aria-live="polite"
+                    tabindex="-1"
+                    class="visually-hidden"
+                ></p>
+
+
+                <button type="submit">Submit</button>
+            </form>
+       </section>
+    </main>
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Home Page</a>
+            <a href="schedule.html">Schedule Now</a>
+            <a href="site-plan.html">Site Plan</a>
+        </div>
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="image"><img src="./images/facebook.svg" alt="A white F on a blue background linking to facebook."></a>
+            <a href="https://x.com/" class="image"><img src="./images/twitter.svg" alt="A white x on a black background linking to x"></a>
+            <a href="https://www.instagram.com/?hl=en" class="image"><img src="./images/instagram.svg" alt="A white camera on a pink background linking to instagram."></a>
+        </div>
+        <div class="image-credit" aria-hidden="true">
+            <a href="https://iconscout.com/icons/facebook" class="text-underline font-size-sm" target="_blank">Facebook</a> by <a href="https://iconscout.com/contributors/pixel-icons" class="text-underline font-size-sm">Pixel Icons</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+            <a href="https://iconscout.com/icons/twitter" class="text-underline font-size-sm" target="_blank">twitter</a> by <a href="https://iconscout.com/contributors/jemy" class="text-underline font-size-sm" target="_blank">MJ Icons</a>
+            <a href="https://iconscout.com/icons/instagram" class="text-underline font-size-sm" target="_blank">instagram</a> by <a href="https://iconscout.com/contributors/maninderkaur" class="text-underline font-size-sm" target="_blank">maninderkaur</a>
+        </div>
+    </footer>
+</body>
+</html>

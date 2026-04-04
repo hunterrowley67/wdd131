@@ -1,0 +1,487 @@
+/* Both */
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --primary-color: #665631;
+  --secondary-color: #c39d4e;
+  --accent1-color: #080807;
+  --accent2-color: #ffffff;
+
+  --heading-font: "Cinzel Decorative", sans-serif;
+  --paragraph-font: "Raleway", "Noto Sans", sans-serif;
+
+  --headline-color-on-white: var(
+    --primary-color
+  );
+  --headline-color-on-color: white; 
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); 
+  --paragraph-color-on-color: white; 
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.5em;
+    font-family: var(--paragraph-font);
+    min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+
+.logo img{
+    max-width: 40%;
+    border: #080807 solid 1px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--secondary-color);
+  width: 100%;
+  margin: 0;
+  border-bottom: solid 2px var(--accent1-color);
+  overflow: hidden;
+  padding: 15px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.nav {
+  display: block;
+  gap: 1rem;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--accent1-color);
+    padding: 50px;
+    
+}
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 30px;
+}
+
+.menu-button .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #000;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
+    border-top: var(--accent1-color) solid 3px;
+    padding-top: 7px;
+}
+
+.footer-nav {
+    text-decoration: none;
+    color: var(--accent1-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 50%;
+}
+
+.image-credit{
+    font-size: .3em;
+}
+
+.socials {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.socials a img{
+    width: 50px;
+    justify-self: right;
+    padding: 10px
+}
+
+h1 {
+    text-align: center;
+}
+/* Home Page css */
+
+#who-we-are {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 3px var(--primary-color);
+    padding-bottom: 30px;
+}
+
+#who-we-are-image img {
+    box-sizing: border-box;
+    border: solid 5px var(--secondary-color);
+    max-width: 100%;
+    border-radius: 5%;
+    box-shadow: #665631 7px 7px 5px;
+}
+
+.faq-div {
+    border: solid 2px var(--secondary-color);
+}
+
+.question-div {
+    display: flex;
+    padding: 10px
+}
+
+.faq-button {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    margin-left: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.faq-button:hover {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+#faq:nth-child(n+2):nth-last-child(n+2) {
+    border-bottom: 1px;
+}
+
+#faq {
+    margin-bottom: 40px;
+}
+
+.answer {
+    padding: 10px
+}
+
+
+#founder {
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: var(--primary-color) 3px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: var(--primary-color) 3px solid;
+}
+
+#founder-truck img {
+    box-sizing: border-box;
+    border: solid 5px var(--secondary-color);
+    max-width: 100%;
+    border-radius: 5%;
+    box-shadow: #665631 7px 7px 5px;
+}
+
+
+#end-image img {
+    box-sizing: border-box;
+    border: solid 5px var(--secondary-color);
+    max-width: 100%;
+    border-radius: 5%;
+    box-shadow: #665631 7px 7px 5px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+/* Schedule page css */ 
+
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-bottom: var(--primary-color) 3px solid;
+}
+
+#banner-image img {
+    box-sizing: border-box;
+    border: solid 5px var(--primary-color);
+    max-width: 100%;
+    border-radius: 5%;
+    box-shadow: var(--primary-color) 7px 7px 5px;
+}
+
+#scheduleForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#scheduleForm > div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+select {
+    max-width: 100%;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+
+    width: 100%;
+    max-width: 320px;
+
+    margin-top: 10px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+#month-select {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center; 
+    gap:10px;
+    margin-top:10px;
+}
+
+#month-select button:hover {
+    background-color: var(--secondary-color);
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    aspect-ratio: 1 / 1;
+
+    padding: 4px;
+    font-size: 0.85rem;
+
+    background: #f2f2f2;
+    border-radius: 6px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.day:hover {
+        background: var(--primary-color);
+        color: white
+}
+
+.selected {
+        background: var(--secondary-color);
+        color: white;
+        font-weight: bold;
+}
+
+#monthLabel {
+    margin-top:10px; 
+    font-weight:bold;
+}
+
+#date-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scheduleForm > button {
+    width: 200px;
+    height: 40px;
+    font-size: 1em;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    background-color: var(--secondary-color);
+}
+
+#scheduleForm > button:hover {
+        background: var(--primary-color);
+        color: white
+}
+/* desktop + media query css */
+
+@media screen and (max-width: 440px) {
+ 
+    .footer-nav {
+        font-size: .8em;
+        justify-self: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .footer-nav a {
+        padding: 5px;
+    }
+
+    .socials a img {
+        max-width: 30px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    body{
+        font-size: 1em;
+    }
+
+    .menu-button {
+        display: block;
+        justify-self: right;
+    }
+
+
+    .nav {
+        display: none;
+    }
+
+    .open {
+        display: flex;
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        grid-column: 1/3;
+        text-align: center;
+    }
+
+
+
+    .nav a {
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 10px;
+    }
+
+    .nav {
+        align-self: center;
+        justify-self: left;
+        font-size: 1.5em;
+        white-space: nowrap;
+    }
+
+    
+}
+
+@media  screen and (min-width: 800px) {
+    #who-we-are {
+        flex-direction: row;
+    }
+
+    #who-we-are-text {
+        max-width: 45%;
+    }
+
+    #who-we-are-image {
+        margin: auto 0;
+    }
+
+    #founder {
+        flex-direction: row;
+    }
+
+    #founder-text {
+        max-width: 45%;
+    }
+
+    #founder-truck {
+        margin: auto 0;
+    }
+
+    #intro {
+        flex-direction: row;
+    }
+
+    #intro-text {
+        max-width: 45%;
+    }
+
+    #banner-image {
+        margin: auto 0;
+    }
+
+    #scheduleForm {
+        align-content: center;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    #schedule-form h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #scheduleForm > div:not(#date-select){
+        flex-direction: row;
+        text-align: left;
+    }
+
+    input {
+        max-width: 40%;
+        max-height: 20px;
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    select {
+        max-width: 40%;
+        max-height: 25px;
+        font-size: .7em;
+        margin-left: 10px;
+    }
+
+    #date-select {
+        align-self: center;
+        align-items: center;
+    }
+
+    #scheduleForm:last-child {
+        text-align: center;
+        justify-self: center;
+    }
+
+}
